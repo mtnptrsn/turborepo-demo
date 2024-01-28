@@ -2,6 +2,9 @@
   "$schema": "https://turbo.build/schema.json",
   "globalDependencies": ["**/.env.*local"],
   "pipeline": {
+    "topo": {
+      "dependsOn": ["^topo"]
+    },
     "build": {
       "dependsOn": ["^build"],
       "outputs": ["dist/**", ".next/**", "!.next/cache/**"]
@@ -15,6 +18,8 @@
     "clean": {
       "cache": false
     },
-    "test": {}
+    "test": {
+      "dependsOn": ["^topo"]
+    }
   }
 }
