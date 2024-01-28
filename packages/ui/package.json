@@ -4,10 +4,8 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "exports": {
-    "./styles.css": "./dist/index.css",
-    "./card": "./src/card.tsx",
-    "./button": "./src/button.tsx"
+  "publishConfig": {
+    "directory": "src"
   },
   "license": "MIT",
   "scripts": {

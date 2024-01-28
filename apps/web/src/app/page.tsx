@@ -1,6 +1,7 @@
 "use client";
 
 import { Button } from "@repo/ui/button";
+import { add } from "@repo/lib/add";
 
 export default function Page(): JSX.Element {
   return (
@@ -9,6 +10,7 @@ export default function Page(): JSX.Element {
       <h2 className="text-2xl">This is the subtitle</h2>
       <h2 className="text-2xl">This is the subtitle</h2>
       <Button onClick={() => alert("Button was clicked")} label="Click Me" />
+      <div>2 + 2 is {add(2, 2)}</div>
     </main>
   );
 }
