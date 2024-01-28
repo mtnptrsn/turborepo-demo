@@ -17,6 +17,6 @@ describe("Home", () => {
 
     // clicks the button and confirms an alert shows up
     button.click();
-    expect(window.alert).toHaveBeenCalledWith("Button was clicked");
+    expect(window.alert).toHaveBeenCalledWith("Button was clicked!");
   });
 });

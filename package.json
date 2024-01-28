@@ -8,7 +8,7 @@
     "type-check": "turbo type-check",
     "clean": "turbo clean",
     "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ci": "turbo build test"
+    "ci": "turbo lint test build"
   },
   "devDependencies": {
     "eslint": "^8.56.0",
