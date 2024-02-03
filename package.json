@@ -8,9 +8,7 @@
     "test:watch": "turbo test:watch",
     "type-check": "turbo type-check",
     "clean": "turbo clean",
-    "format": "prettier --write \"**/*.{ts,tsx,md}\"",
-    "ci:test": "turbo lint type-check test",
-    "ci:release": "echo \"No release script specified\""
+    "format": "prettier --write \"**/*.{ts,tsx,md}\""
   },
   "devDependencies": {
     "eslint": "^8.56.0",
