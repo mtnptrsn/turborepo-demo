@@ -1,5 +1,3 @@
-import * as React from "react";
-
 export function Button({
   label,
   onClick,
@@ -8,10 +6,7 @@ export function Button({
   onClick: () => void;
 }): JSX.Element {
   return (
-    <button
-      className="ui-p-2 ui-bg-white ui-text-black ui-rounded"
-      onClick={onClick}
-    >
+    <button className="p-2 bg-white text-black rounded" onClick={onClick}>
       {label}
     </button>
   );

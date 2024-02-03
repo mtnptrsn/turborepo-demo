@@ -4,8 +4,9 @@
   "sideEffects": [
     "**/*.css"
   ],
-  "publishConfig": {
-    "directory": "src"
+  "exports": {
+    "./button": "./src/button.tsx",
+    "./styles.css": "./dist/index.css"
   },
   "license": "MIT",
   "scripts": {

@@ -28,7 +28,7 @@ importers:
     dependencies:
       '@repo/ui':
         specifier: workspace:*
-        version: link:../../packages/ui/src
+        version: link:../../packages/ui
       next:
         specifier: ^14.0.4
         version: 14.0.4(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -80,7 +80,7 @@ importers:
         version: link:../../packages/lib/src
       '@repo/ui':
         specifier: workspace:*
-        version: link:../../packages/ui/src
+        version: link:../../packages/ui
       next:
         specifier: ^14.0.4
         version: 14.0.4(@babel/core@7.23.9)(react-dom@18.2.0)(react@18.2.0)
@@ -211,7 +211,6 @@ importers:
       typescript:
         specifier: ^5.3.3
         version: 5.3.3
-    publishDirectory: src
 
 packages:
 
