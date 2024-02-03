@@ -20,6 +20,10 @@
     },
     "test": {
       "dependsOn": ["^topo"]
+    },
+    "test:watch": {
+      "cache": false,
+      "persistent": true
     }
   }
 }
