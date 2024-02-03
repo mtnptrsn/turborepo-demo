@@ -6,7 +6,7 @@ export function Button({
   onClick: () => void;
 }): JSX.Element {
   return (
-    <button className="p-2 bg-white text-black rounded" onClick={onClick}>
+    <button className="p-2 bg-white text-black rounded m-2" onClick={onClick}>
       {label}
     </button>
   );
