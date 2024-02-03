@@ -11,6 +11,7 @@ export default function Page(): JSX.Element {
       <Button onClick={() => alert("Button was clicked")} label="Click Me" />
       <div>2 + 2 is {add(2, 2)}</div>
       <div>2 - 2 is {subtract(2, 2)}</div>
+      <div>4 - 2 is {subtract(4, 2)}</div>
     </main>
   );
 }
