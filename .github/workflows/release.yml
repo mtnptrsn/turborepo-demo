@@ -1,14 +1,15 @@
-name: CI
+name: Release
 
 on:
-  push:
+  workflow_run:
+    workflows: ["Test"]
     branches: ["main"]
-  pull_request:
-    types: [opened, synchronize]
+    types:
+      - completed
 
 jobs:
   build:
-    name: Build and Test
+    name: Release
     timeout-minutes: 15
     runs-on: ubuntu-latest
     # To use Remote Caching, uncomment the next lines and follow the steps below.
@@ -36,5 +37,5 @@ jobs:
       - name: Install dependencies
         run: pnpm install
 
-      - name: CI
-        run: pnpm run ci
+      - name: Release
+        run: pnpm run ci:release
